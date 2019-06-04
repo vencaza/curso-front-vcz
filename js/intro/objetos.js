@@ -61,3 +61,93 @@ var cancionBatman = new Array(16).join('what'-1) + 'Batman!';
 console.log(cancionBatman);
 
 
+/*----------------------------------EJ14-------------------------------------------*/
+var numeros = [1,34,12,64,72,343,64,6655,45,22,71]
+var ej14 = numeros.map(function(num){
+    return num%2 === 0? 'PAR' : num;
+
+});
+console.log(ej14);
+/*---------------------------------------------------------------------------------*/
+text = "hola mundo";
+console.log(text.length);//la longitud del string
+console.log(text.toUpperCase());//convierte todas las letras en may
+console.log(text.replace(/o/g,0))//toma en cuenta todas las o de la frase
+console.log(text.substring(3,6))//desde la pos 3 a la 6
+console.log(text.includes('hola'));
+console.log(text.split(' '))
+
+
+/*---------------------------------------------------------------------------------------*/
+var colores =['Amarillo','Azul','Rojo'];
+colores.push('blanco'); //lo agrega al final del array
+var ultimo = colores.pop();// obtiene el ultimo y lo saca del array
+var primero = colores.push(); //
+console.log(colores);
+
+var colores =['Amarillo','Azul','Rojo'];
+colores.unshift('verde'); // lo añade al principio
+colores = colores.concat([ultimo,primero])
+console.log(colores);
+
+/*---------------------------------------------------------------------------------------*/
+
+var hoy = new Date();
+console.log(hoy.getFullYear());//el año
+console.log(hoy.getDay());//el dia de la semana
+console.log(hoy.getDate());//obtiene la fecha del dia
+
+/*---------------------------------------------------------------------------------------*/
+var vcz={nombre:'Venecia'}
+var vczJSON = JSON.stringify(vcz)//convierte obj a json
+var vczJS = JSON.parse(vczJSON)//convierte obj a json
+
+console.log(vcz);//formato de json
+console.log(vczJSON); //formato string pero es Json
+console.log(vczJS); //formato de json otra vez
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

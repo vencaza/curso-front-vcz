@@ -24,7 +24,7 @@ var arraySerie = [serie1,serie2,serie3,serie4];
  function SerieFinalizada(arraySerie){
     arraySeriesNoFinalizadas = [];
      arraySeriesNoFinalizadas = arraySerie.filter(function(elem){
-        return elem.fnl() == false; 
+        return !elem.fnl(); 
     });
     // arraySerie.forEach(function(element) {
     //     if (element.fnl() == false)
