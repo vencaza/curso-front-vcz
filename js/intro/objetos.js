@@ -107,6 +107,31 @@ console.log(vczJSON); //formato string pero es Json
 console.log(vczJS); //formato de json otra vez
 
 
+///PROTOTYPE
+function Coche(marca,modelo,color){
+    this.marca = marca;
+    this.modelo = modelo;
+    this.color = color;
+    // this.pintar = function(nuevoColor){
+    //     this.color = nuevoColor;
+
+    // }
+}
+
+Coche.prototype.pintar = function(nuevoColor){
+    this.color = nuevoColor;
+
+}
+
+let tesla = new Coche('Tesla','Roadter','Azul');
+let audi = new Coche('Audi','A3','negro');
+let ford = new Coche('Ford','focus','blanco');
+console.log(tesla);
+console.log(audi);
+tesla.pintar('verde');
+console.log(tesla)
+
+
 
 
 
