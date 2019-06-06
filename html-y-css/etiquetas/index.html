@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <h1>Titulo 1 </h1>
+    <h3>Titulo 2</h3>
+    <h6>Titulo 3</h6>
+    <hr>
+    <!--Linea horizontal-->
+    <p>
+        Un Parrafo de <br>
+        varias<br>
+        lineas <br>
+
+    </p>
+    <br>
+    <!--Saltos-->
+    <div>1</div>
+    <div>2</div>
+    <a href="#ultimo-parrafo">Un Enlace</a>
+    <a href="http://www.google.com" target="_blank">Google</a>
+    <!--El target con blank me abre el enlace en otra pestaña-->
+
+    <!-- <p id="ultimo-parrafo">Bappleees jeje bananaaaa po kass poopayee underweaaar uuuhhh poulet tikka masala gelatooo
+        bananaaaa underweaaar.
+        Bee
+        do bee do bee do chasy underweaaar hahaha hahaha. Ti aamoo! jeje tulaliloo bananaaaa me want bananaaa! Jeje ti
+        aamoo! Baboiii bananaaaa aaaaaah. Potatoooo la bodaaa potatoooo tulaliloo me want bananaaa! Jeje underweaaar
+        tatata
+        bala tu me want bananaaa! Belloo! Butt gelatooo bappleees pepete po kass. Potatoooo underweaaar poopayee
+        tulaliloo
+        gelatooo para tú poulet tikka masala bananaaaa bappleees. Aaaaaah belloo! Hahaha daa wiiiii jeje. Me want
+        bananaaa!
+        bappleees poulet tikka masala me want bananaaa! Uuuhhh potatoooo jeje poulet tikka masala tatata bala tu wiiiii.
+        Tank yuuu! bananaaaa poulet tikka masala underweaaar.</p> -->
+
+    <!-- <ul>
+        <li>Harina</li>
+        <li>Leche</li>
+        <li>Queso</li>
+        <li>Pan</li>
+        <li>Tomate</li>
+    </ul>
+
+    <ol>
+        <li>Paso 1</li>
+        <li>Paso 2</li>
+        <li>Paso 3</li>
+        <li>Paso 4</li>
+        <li>Paso 5</li>
+    </ol> -->
+
+    <table>
+        <thead>
+            <!--Cabecera-->
+            <tr>
+                <th>Col1</th>
+                <th>Col2</th>
+                <th>Col3</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <!--filas-->
+                <td>f1 c1</td>
+                <!--Columna-->
+                <td>f1 c2</td>
+                <td rowspan="2">f1 c3</td>
+            </tr>
+            <tr>
+                <td>f2 c1</td>
+                <!--Columna-->
+                <td>f2 c2</td>
+                <!-- <td>f2 c3</td> -->
+            </tr>
+          
+           
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" >Total:</td>                
+                <td>20</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- <img src="https://st3.depositphotos.com/3969727/19053/v/1600/depositphotos_190532572-stock-illustration-hola-hello-in-spanish-word.jpg" alt="Hola"> -->
+    <form action="micontrolador.rb" method="POST">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="">Nombre:</label>
+            <input name="" type="text">
+
+        </fieldset>
+        <fieldset>
+                <legend>Datos Pago</legend>
+                <label for="">Numero Tarjeta:</label>
+                <input type="text" pattern="([0-9]{4} ) {3}[0-9]{4}>
+        </fieldset>
+        <fieldset>
+            <input type="checkbox" name="skills" value="js">JS
+            <input type="checkbox" name="skills" value="angular">Angular
+            <input type="checkbox" name="skills" value="c" checked>C
+        </fieldset>
+        <fieldset>
+            <input type="radio" name="option" value="si" checked>Si
+            <input type="radio" name="option" value="no">No
+        </fieldset>
+        <fieldset>
+                <input type="file" name="file"  checked>                
+       
+        </fieldset>
+        <fieldset>
+                <input type="email" required placeholder="a@a.es" name="email" >
+                <input type="password" name="pass" >
+        </fieldset>
+        <fieldset>
+                <input name="miUrl" type="url" >
+        </fieldset>
+        <!-- <input type="number" value="20"> 
+        <input type="color" value="#ccddcc"> -->
+        <!-- <input type="date" > -->
+        
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <!-- <marquee behavior="" direction="">Esto no se usa ya!</marquee> -->
+
+  
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+table, td,th {
+    border: 1px solid black;
+}
+
+td#sin-centrar{
+    text-align: start;
+}
+
+img {
+    width: 400px;
+}

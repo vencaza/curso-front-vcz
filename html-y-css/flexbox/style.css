@@ -1,0 +1,32 @@
+/* p.letra-roja {
+    color: red;
+    
+} */
+
+#contenedor{
+    background-color: orange;
+    width: 700px;
+    height: 400px;
+    display: flex;
+
+}
+
+.item{
+    width: 300px;
+    height: 150px;
+    background-color: blue;
+    border: 1px solid white;
+    color: white;
+}
+
+/* html body p{
+    color: blue;
+}
+
+html p{
+    color: red;
+} */
+
+/*p.letra-roja solo aplica a los que tengan esa clase
+si solo se pone html por defecto a los que no tengan clase especfica se le aplicara el de html
+*/
