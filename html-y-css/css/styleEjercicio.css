@@ -1,0 +1,107 @@
+h1{
+    text-align: center;
+    animation-name: SWING;
+    animation-duration: 2s;
+}
+
+h2 {
+    text-align: center;
+    animation-name: HEART;
+    animation-duration: 2s;
+    
+
+}
+
+
+@keyframes SWING{
+    0%{
+        transform: rotate(5deg);
+    }
+    30%
+    {
+        transform: rotate(-10deg);
+    }
+    60%{
+        transform: rotate(10deg);
+    }
+    90%
+    {
+        transform: rotate(-10deg);
+    }
+    100%
+    {
+        transform: rotate(10deg);
+    }   
+   
+}
+
+@keyframes HEART{
+    0%{
+        transform: scale(1);
+    }
+    30%
+    {
+        transform: scale(2);
+    }
+    60%{
+        transform: scale(1);
+    }
+    90%
+    {
+        transform: scale(2);
+    }
+    100%
+    {
+        transform: scale(1);
+    }   
+   
+}
+
+div.caja1{
+    width: 260px;
+    height: 260px;
+    margin: auto;
+    display: block;
+    border: 1px solid grey;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+    
+    
+}
+img{
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    display: block;
+ 
+}
+
+div.caja1:hover{
+    transition:  height 1s, transform 1s;    
+    height: 50vh;
+    
+}
+
+button {
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+button:hover {
+	background-color:#5cbf2a;
+}
+button:active {
+	position:relative;
+	top:1px;
+}

@@ -6,8 +6,17 @@
 #contenedor{
     background-color: orange;
     width: 700px;
-    height: 400px;
+    /* height: 400px; */
     display: flex;
+    flex-wrap: wrap;
+    /*centrarlo verticalmente*/
+    align-items: center;
+    /* align-items: flex-start; */
+    /*centrarlo horizontal*/
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+    /* justify-content: space-between; */
+   
 
 }
 
@@ -16,7 +25,25 @@
     height: 150px;
     background-color: blue;
     border: 1px solid white;
-    color: white;
+    color: yellow;
+    order: 2;
+    justify-content: center;
+
+    display: flex;
+    align-items: center;
+   
+}
+
+.item.Preferido{
+    order: 1;
+}
+
+.item.Castigado{
+    order: 3;
+}
+
+.item.derecha{
+   
 }
 
 /* html body p{
