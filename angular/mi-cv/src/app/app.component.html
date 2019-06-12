@@ -1,0 +1,8 @@
+<h1>Mi Curriculum Vitae</h1>
+<app-cmp-formulario 
+(avisarCambioNombre)="cambiarNombre($event)" 
+(avisarCambioApellido)="cambiarApellido($event)"
+(avisarCambioCorreo)="cambiarCorreo($event)"
+(avisarCambioSkill)="cambiarSkill($event)"></app-cmp-formulario>
+<app-cmp-cv [nombreRecibido]="nombre" [apellidoRecibido]="apellido" [correoRecibido]="correo" [skillRecibido]="skill"></app-cmp-cv>
+

@@ -1,0 +1,23 @@
+<h1>Pipes</h1>
+<p>{{texto}}</p>
+<p>{{texto | uppercase}}</p>
+<p>{{texto |lowercase}}</p>
+<!-- Para pasar mas de un parametro se hace con los :  -->
+<p>{{texto | slice:5:8}}</p>
+<p>{{texto | doble}}</p>
+<p>{{texto | doble:'e'}}</p>
+
+<p>{{precio | currency}}</p>
+<p>{{precio | currency:'EUR'}}</p>
+<p>{{precio | doble}}</p>
+<p>{{precio | doble:4}}</p>
+
+
+<p>{{ 'hola' | reverse}}</p>
+<p>{{'este es el texto' | ocultar:['este','texto']}}</p>
+
+
+<p>{{ fecha }}</p>
+<!-- para pasar un parametro al pipe es asi -->
+<p>{{ fecha | date : 'dd/mm/yyyy'}}</p> 
+

@@ -1,0 +1,12 @@
+<h1>Formulario</h1>
+<h2>Nombre:</h2>
+<input type="text" (input)="cambiarNombre($event)" >
+<h2>Apellido:</h2>
+<input type="text" (input)="cambiarApellido($event)"  >
+<h2>Correo:</h2>
+<input type="text" (input)="cambiarCorreo($event)" >
+<h2>Skills:</h2>
+<input type="text" #refInput>
+<button type="button" (click)="cambiarSkill(refInput.value)">Agregar</button>
+
+

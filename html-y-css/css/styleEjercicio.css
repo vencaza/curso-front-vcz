@@ -1,13 +1,15 @@
 h1{
     text-align: center;
-    animation-name: SWING;
-    animation-duration: 2s;
+    /* animation-name: SWING;
+    animation-duration: 2s; */
+    animation: SWING 2s infinite;
 }
 
 h2 {
     text-align: center;
-    animation-name: HEART;
-    animation-duration: 2s;
+    /* animation-name: HEART;
+    animation-duration: 2s; */
+    animation: HEART 2s infinite;
     
 
 }
