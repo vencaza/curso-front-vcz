@@ -1,0 +1,17 @@
+.letraAzul{
+    color: blue;
+}
+
+.subrayado{
+    text-decoration: underline;
+}
+
+@keyframes mymove {
+    50% {margin-top: 50px;}
+    50% {margin-left: 50px;}
+}
+
+.movimiento {
+    animation-name: mymove;
+    animation-duration: 1s;
+}

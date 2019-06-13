@@ -21,3 +21,17 @@
 <!-- para pasar un parametro al pipe es asi -->
 <p>{{ fecha | date : 'dd/mm/yyyy'}}</p> 
 
+
+
+<ul>
+    <li *ngFor="let mascota of mascotas | filtro:'p'">{{mascota}}</li>
+</ul>
+
+<input type="text" (change)="mascotas.push($event.target.value)">
+
+<ul>
+    <li *ngFor="let mascota of mascotas">{{mascota}}</li>
+</ul>
+
+<h2>Pipe Async</h2>
+<p>Mensaje: {{msg | async}} </p>

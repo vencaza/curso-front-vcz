@@ -12,6 +12,12 @@ import { CmpPipesComponent } from './cmp-pipes/cmp-pipes.component';
 import { DoblePipe } from './cmp-pipes/doble.pipe';
 import { ReversePipe } from './cmp-pipes/reverse.pipe';
 import { OcultarPipe } from './cmp-pipes/ocultar.pipe';
+import { FiltroPipe } from './cmp-pipes/filtro.pipe';
+import { CmpDirectivasComponent } from './cmp-directivas/cmp-directivas.component';
+import { MarcarDirective } from './cmp-directivas/marcar.directive';
+import { PowerModeDirective } from './cmp-directivas/power-mode.directive';
+import { CmpOfertasTrabajoComponent } from './cmp-ofertas-trabajo/cmp-ofertas-trabajo.component';
+import { CardJobComponent } from './cmp-ofertas-trabajo/card-job/card-job.component';
 
 
 @NgModule({
@@ -25,7 +31,13 @@ import { OcultarPipe } from './cmp-pipes/ocultar.pipe';
     CmpPipesComponent,
     DoblePipe,
     ReversePipe,
-    OcultarPipe  
+    OcultarPipe,
+    FiltroPipe,
+    CmpDirectivasComponent,
+    MarcarDirective,
+    PowerModeDirective,
+    CmpOfertasTrabajoComponent,
+    CardJobComponent  
   ],
   imports: [
     BrowserModule,
