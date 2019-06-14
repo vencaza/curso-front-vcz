@@ -5,7 +5,7 @@
     margin: 0 auto;
     border: 1px solid black;
     justify-content: space-evenly;
-    background-color: lightgoldenrodyellow;
+    background-color: orangered;
 }
 
 /*Esto es para ponerle una condicion al cardList a traves de una mediaQuery*/
