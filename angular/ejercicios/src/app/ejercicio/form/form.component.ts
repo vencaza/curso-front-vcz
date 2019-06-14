@@ -16,8 +16,8 @@ export class FormComponent implements OnInit {
   }
 
   addTarea(value){
-    let id =  Math.floor(Math.random()*999);
-    this._service.addTarea(new Tarea(id, value, false));
+    // let id =  Math.floor(Math.random()*999);
+    // this._service.addTarea(new Tarea(id, value, false));
   }
 
 }

@@ -1,0 +1,58 @@
+ng new proyecto (CREA UN PROYECTO)
+ng serve (LEVANTA EL SERVIDOR)
+ng 	g 	c  		mi-cmp
+		p PIPES
+		d DIRECTIVE
+		cl CLASE
+		s SERVICE
+
+COMPONENTES TIENEN LOS SIGUIENTES ARCHIVOS
+HTML
+TS
+CSS
+SPEC.TS
+
+ANGULAR TIENE
+MODULE
+	DECLARATIONS-- MODULE QUE TIENE UN ARRAY DE DECLARACIONES DE LOS COMPONENTES, DIRECTIVAS Y PIPES 
+	IMPORT--FORMSMODULE (ngModel),BROWSER MODULE(ngClass,ngStyle, upperCase,currency)
+
+ikea
+amazon
+
+listaProdModule (componentes: ProductoCmp,ListaProductoCmp)
+
+miPerfilModule (FormsModule, InfoCmp)
+
+CarritoModule 
+
+DECORADORES
+@	COMPONENT + HTML,CSS,SELECTOR
+	NGMODULE LLEVA LO DE MODULE
+	PIPE LLEVA UN NAME Y UN PURE QUE SI ES PURO ES TRUE Y SINO FALSE (CAMBIA EL VALOR PARA MOSTRAR A TRAVES DE CREAR FUNCIONES) {{angel | UPPERCASE(ESTE ES EL PIPE)}}
+	DIRECTIVE TIENE UN SELECTOR
+
+
+
+cmp1 --> n = "Angel"
+
+	cmp2 --> nombre = Angel (aqui pongo un input para recibir el nombre desde la n de arriba si quiero yo mandar el nombre hacia cmp1 es output y el
+					output es solo para un evento con EvenEmmiter, no se puede poner un output a un string)
+
+	cmp1.html
+		<app-cmp2 [nombre]= "n">
+		</app-cmp2>
+
+
+
+String Interpolation {{}}
+Property Binding [atributodeHtml] = "variable" // Si viene de alguna variable y se asignara a un componente html
+
+---Servicios----
+Va la logica 
+Los metodos q pueden ser utilizados en distintos componentes
+Peticiones Http
+Por ejemplo la carga de una lista, añadir un nuevo dato a la lista
+Se utiliza un servicio para intercomunicar los componentes de forma mas eficiente
+cuando se ejecuta el ngoninit se inicializan las cosas y se pueden pintar los datos
+

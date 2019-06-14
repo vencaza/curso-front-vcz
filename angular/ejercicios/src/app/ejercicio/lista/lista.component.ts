@@ -14,8 +14,11 @@ export class ListaComponent implements OnInit {
   constructor(private _service: ServiceTareaService) { }
 
   ngOnInit() {
-    this.tareas = this._service.tarea;
+    // this.tareas = this._service.gettarea();
     console.log(this.tareas);
+    this._service.gettarea().subscribe((nuevaLista) =>{
+      this.tareas = nuevaLista;
+    });
     this._service.tareasCambiadas.subscribe((nuevaLista) =>{
       this.tareas = nuevaLista;
     });

@@ -6,6 +6,8 @@ import { EjercicioComponent } from './ejercicio/ejercicio.component';
 import { ListaComponent } from './ejercicio/lista/lista.component';
 import { FormComponent } from './ejercicio/form/form.component';
 import { TareaComponent } from './ejercicio/lista/tarea/tarea.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { TareaComponent } from './ejercicio/lista/tarea/tarea.component';
     TareaComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

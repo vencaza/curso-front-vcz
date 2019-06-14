@@ -22,6 +22,7 @@ export class TareaComponent implements OnInit {
     this._service.deshacerTarea(this.tarea);
   }
   eliminar(){
+   
     this._service.deleteTarea(this.tarea);
 
   }

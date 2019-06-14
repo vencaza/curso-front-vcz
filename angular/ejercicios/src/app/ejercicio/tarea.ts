@@ -1,10 +1,10 @@
 export class Tarea {
-    constructor(private _id:number,private _nombre:string,private _completa:boolean){}
+    constructor(private _id:string,private _nombre:string,private _completa:boolean){}
  
         get id() {
             return this._id;
         }
-        set id(val: number) {
+        set id(val: string) {
             this._id = val;
         }
         get nombre() {
